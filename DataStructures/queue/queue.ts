@@ -1,4 +1,5 @@
 
+
 export class Queue<T> {
   _queue: T[];
 
@@ -18,6 +19,10 @@ export class Queue<T> {
     this._queue = [];
   }
 
+  print() {
+    console.log(this._queue.toString())
+  }
+
   get front(): T {
     return this._queue[0]
   }
@@ -28,7 +33,7 @@ export class Queue<T> {
     } return true;
   }
 
-  get count(): number {
+  get size(): number {
     return this._queue.length;
   }
 }
