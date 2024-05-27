@@ -19,6 +19,8 @@ function convertToBinary(decimalNumber: number): string {
     decimalNumber = Math.floor(decimalNumber / 2);
   }
 
+  remStack.print()
+
   // Prepare binary string by loopthrough stack
   while (!remStack.isEmpty) {
     binaryString += remStack.pop()?.toString()
@@ -35,3 +37,6 @@ console.log(convertToBinary(10));
 
 // Convert decimal 20 to binary
 console.log(convertToBinary(20))
+
+// Convert decimal 120 to binary
+console.log(convertToBinary(120))
