@@ -1,5 +1,9 @@
+/**
+ * 1.1) Stack Data Structure
+ *  -   Stack Implementation
+ */
 
-class Stack<T> {
+export class Stack<T> {
   _stack: T[]
 
   constructor(stack?: T[]) {
@@ -26,8 +30,8 @@ class Stack<T> {
     console.log(this._stack.toString())
   }
 
-  get empty(): boolean {
-    if (this._stack.length > 1) {
+  get isEmpty(): boolean {
+    if (this._stack.length > 0) {
       return false
     } return true
   }
@@ -36,22 +40,3 @@ class Stack<T> {
     return this._stack.length;
   }
 }
-
-const stack = new Stack<number>();
-
-
-stack.push(0)
-stack.push(1)
-stack.push(2)
-stack.push(3)
-stack.push(4)
-stack.push(5)
-stack.push(6)
-
-stack.pop()
-
-stack.push(7);
-
-console.log(stack.peek());
-
-stack.print();
