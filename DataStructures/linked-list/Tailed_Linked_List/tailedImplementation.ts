@@ -20,8 +20,8 @@ interface ILinkedList<T> {
 }
 
 export class LinkedList<T> implements ILinkedList<T> {
-  private head: Node<T> | null;
-  private tail: Node<T> | null;
+  public head: Node<T> | null;
+  public tail: Node<T> | null;
   private size: number;
 
   constructor() {
@@ -114,8 +114,8 @@ export class LinkedList<T> implements ILinkedList<T> {
       } else {
         let prev = this.head;
 
-        while (prev.next === this.tail) {
-          prev = prev.next
+        while (prev.next !== this.tail) {
+          prev = prev.next!
         }
 
         prev.next = null;
