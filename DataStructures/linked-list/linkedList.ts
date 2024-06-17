@@ -146,6 +146,22 @@ class LinkedList<T> implements ILinkedList<T> {
       return searchForVal(this.head!);
     }
   }
+
+  // Reverse : Reverse a linked list
+  public reverse(): void {
+    let current: Node<T> | null = this.head;
+    let prev: Node<T> | null = null;
+
+    while (current) {
+      let next = current.next;
+      current.next = prev;
+
+      prev = current;
+      current = next;
+    }
+
+    this.head = prev;
+  }
 }
 
 const list = new LinkedList<number>();
@@ -164,8 +180,8 @@ list.insert(50, 3);
 list.append(70);
 list.append(80);
 
-list.removeAt(6);
-
 list.print()
 
-console.log(list.search(80));
+list.reverse();
+
+list.print();

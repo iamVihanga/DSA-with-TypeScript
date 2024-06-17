@@ -2,6 +2,13 @@
   "name": "datastructuresandalgorithms",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "run:stack": "bun run DataStructures/stack/excersice_2.ts",
+    "run:queue": "bun run DataStructures/queue/queue.ts",
+    "run:priority-queue": "bun run DataStructures/queue/priority-queue.ts",
+    "run:linked-list": "bun run DataStructures/linked-list/linkedList.ts",
+    "run:tailed-linked-list": "bun run DataStructures/linked-list/linkedList-withTail.ts"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
