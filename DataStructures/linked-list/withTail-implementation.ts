@@ -16,7 +16,7 @@ interface ILinkedList<T> {
   prepend(value: T): Node<T>,
   append(value: T): Node<T>,
   removeFromFront(): T | null,
-  // removeFromEnd(): void
+  removeFromEnd(): T | null
 }
 
 export class LinkedList<T> implements ILinkedList<T> {
@@ -100,14 +100,30 @@ export class LinkedList<T> implements ILinkedList<T> {
     } else return null
   }
 
-  // public removeFromEnd(): T | null {
-  //   if (this.isEmpty()) {
-  //     return null;
-  //   } 
+  public removeFromEnd(): T | null {
+    if (this.isEmpty()) {
+      return null;
+    }
 
-  //   if (this.tail) {
-  //     let value = this.tail.data;
-  //     this.tail = 
-  //   }
-  // }
+    if (this.tail && this.head) {
+      let value = this.tail.data;
+
+      if (this.size == 1) {
+        this.head = null;
+        this.tail = null;
+      } else {
+        let prev = this.head;
+
+        while (prev.next === this.tail) {
+          prev = prev.next
+        }
+
+        prev.next = null;
+        this.tail = prev;
+      }
+
+      this.size--;
+      return value;
+    } else return null;
+  }
 }
