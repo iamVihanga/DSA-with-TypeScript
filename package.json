@@ -9,7 +9,8 @@
     "run:linked-list": "bun run DataStructures/linked-list/linkedList.ts",
     "run:tailed-linked-list": "bun run DataStructures/linked-list/TailedLinkedList/tailedLinkedList.ts",
     "run:linked-list-stack": "bun run DataStructures/linked-list/LinkedList_Stack/linkedListStack.ts",
-    "run:linked-list-queue": "bun run DataStructures/linked-list/LinkedList_Queue/linkedListQueue.ts"
+    "run:linked-list-queue": "bun run DataStructures/linked-list/LinkedList_Queue/linkedListQueue.ts",
+    "run:hash-table": "bun run DataStructures/hash-table/index.ts"
   },
   "devDependencies": {
     "@types/bun": "latest"
