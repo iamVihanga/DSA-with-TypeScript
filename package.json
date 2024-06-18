@@ -7,7 +7,7 @@
     "run:queue": "bun run DataStructures/queue/queue.ts",
     "run:priority-queue": "bun run DataStructures/queue/priority-queue.ts",
     "run:linked-list": "bun run DataStructures/linked-list/linkedList.ts",
-    "run:tailed-linked-list": "bun run DataStructures/linked-list/Tailed_Linked_List/tailedLinkedList.ts",
+    "run:tailed-linked-list": "bun run DataStructures/linked-list/TailedLinkedList/tailedLinkedList.ts",
     "run:linked-list-stack": "bun run DataStructures/linked-list/LinkedList_Stack/linkedListStack.ts",
     "run:linked-list-queue": "bun run DataStructures/linked-list/LinkedList_Queue/linkedListQueue.ts"
   },

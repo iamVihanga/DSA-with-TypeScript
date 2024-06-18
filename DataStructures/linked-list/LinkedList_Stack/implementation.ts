@@ -1,4 +1,4 @@
-import { LinkedList, Node } from '../Tailed_Linked_List/tailedImplementation'
+import { LinkedList, Node } from '../TailedLinkedList/tailedImplementation'
 
 interface ILinkedListStack<T> {
   push(value: T): Node<T>,
